@@ -1,7 +1,6 @@
 body {
   height: 100vh;
-  background: url(img/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg)
-    no-repeat center center/cover;
+  background: url(img/Background-pic.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
