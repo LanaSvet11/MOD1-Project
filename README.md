@@ -26,7 +26,9 @@ Built with: Visual Studio Code
 
 1. Clone this repository to your local machine:
 
-git clone https://github.com/LanaSvet11/MOD1-Project.git 2. Open the index.html file in your web browser to launch the application.
+git clone https://github.com/LanaSvet11/MOD1-Project.git
+
+2. Open the index.html file in your web browser to launch the application.
 
 ## Usage
 
