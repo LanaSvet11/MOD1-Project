@@ -2,6 +2,8 @@
 
 **Task List Web Application**
 
+[a link to the live site](https://lanasvet11.github.io/MOD1-Project/)
+
 ## Overview
 
 This web application is a simple task list manager that allows users to add, complete, prioritize, and filter tasks. It provides an easy way to organize and manage your tasks online. It also includes a real-time clock display.
