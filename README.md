@@ -8,6 +8,10 @@ This web application is a simple task list manager that allows users to add, com
 
 ![Screenshot](./screenshot.png)
 
+## Tech/framework used
+
+Built with: Visual Studio Code
+
 ## Features
 
 - **Add Task**: Enter a task in the input field and click "Add Task" to add it to the task list.
