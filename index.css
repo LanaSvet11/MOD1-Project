@@ -1,94 +1,158 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  background: url(img/Background-pic.jpg) no-repeat center center/cover;
+  align-items: center;
+  background: url(./img/Background-pic.jpg);
+  background-size: cover;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #002765;
+}
+.clock {
+  display: flex;
+  position: relative;
+}
+
+.clock div {
+  margin: 5px;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  background-color: slateblue;
+  opacity: 0.8;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#add-task-container {
-  width: 350px;
-  padding: 20px 10px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 3px;
-  margin-bottom: 20px;
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: darkblue;
+  opacity: 0.8;
+}
 
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: green;
+}
+
+.section2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-input {
-  flex: 5;
-  margin-right: 10px;
-  font-size: 1.2rem;
-  padding: 5px;
-}
-
-#add-task {
-  flex: 1;
-  transition: 0.3s;
-  font-size: 1.2rem;
-  padding: 5px;
+.container {
   background-color: #fff;
-  color: green;
-  border: green solid 2px;
-  border-radius: 10px;
+  font-family: sans-serif, Arial;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 450px;
 }
 
-#add-task:hover {
-  background-color: green;
+/* Style the heading */
+.container h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+button[type="submit"] {
+  background-color: #2e2d9b;
   color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
-/* Styling for task which get added to to-do list */
+/* Style the task list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-.task {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 3px;
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
 
-  padding: 5px;
-  margin-bottom: 5px;
+.completed {
+  text-decoration: line-through;
+}
 
+.priority {
+  color: red;
+}
+
+/* Style the filter buttons */
+.filter-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.task li {
-  list-style: none;
-  flex: 4;
-  padding: 5px;
-  font-size: 1.3rem;
-  margin: 10px;
-}
-
-.task button {
-  flex: 1;
-  border-radius: 10px;
-  background-color: #fff;
+button {
+  background-color: #2e2d9b;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
-.task .checkTask {
-  color: orange;
-  margin-right: 5px;
-  border: solid 2px orange;
-  font-size: 1.5rem;
-}
-
-.task .checkTask:hover {
-  background-color: orange;
-  color: #fff;
-}
-
-.task .deleteTask {
-  color: red;
-  border: solid 2px red;
-  font-size: 1.3rem;
-}
-
-.task .deleteTask:hover {
-  background-color: red;
-  color: #fff;
+button:hover {
+  background-color: #7b6eca;
 }
